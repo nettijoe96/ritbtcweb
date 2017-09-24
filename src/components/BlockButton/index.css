@@ -1,0 +1,14 @@
+.BlockButtonBlock{
+  width: 100%;
+  margin: 50px;
+}
+.BlockButtonButton{
+  width: 30%;
+  background-color: white;
+  color: #0000aa;
+  border: 4px solid #0000aa;
+  border-radius: 10px;
+  padding: 25px 50px;
+  text-align: center;
+  margin: 0px auto;
+}

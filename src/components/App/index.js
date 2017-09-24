@@ -4,23 +4,34 @@ import './index.css';
 import Button from 'components/Button';
 import ButtonCounter from 'components/ButtonCounter';
 import content from 'variable.json';
+import Sector from 'components/Sector'
+import BlockButton from 'components/BlockButton'
 
-const buttons = content.data.map((b)=>{
-  return(<Button>{b}</Button>)
-})
+/*
+COLOR SCHEME
+DARKS
+#000000 - Black
+#1e1e1e - Slate? Gray
+#37123c - Purple, darkish
+LIGHTS
+#FFFFFF - White
+#87f5fb - Light Blue/Cyan
+#FFb629 - Bitcoin Orange
+*/
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <h1>Bitcoin Club</h1>
+          <h1>Bitcoin Club!</h1>
+          <p style={{color:'white'}}>
+            Welcome! Come learn about RIT, BTC, ETC!
+          </p>
+          <BlockButton>
+          Click Me!
+          </BlockButton>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        {buttons}
-        <ButtonCounter/>
       </div>
     );
   }
