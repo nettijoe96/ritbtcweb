@@ -1,8 +1,12 @@
 {
   "light":{
-    "pure":"#FFFFFF"
+    "pure":"#FFFFFF",
+    "off":"#BFFFF1",
+    "accent":"#FFb629"
   },
   "dark":{
-    "pure":"#000000"
+    "pure":"#000000",
+    "off":"#1e1e1e",
+    "accent":"#37123c"
   }
 }
