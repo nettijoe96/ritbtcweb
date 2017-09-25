@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './index.css';
 
-class Component extends Component {
+class Jumbotron extends Component {
   render() {
     return (
-      <div className="Component">
+      <div className="Jumbotron">
       </div>
     );
   }
 }
-export default Component;
+export default Jumbotron;
