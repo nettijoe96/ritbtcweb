@@ -1,3 +1,34 @@
-.Example{
+.Jumbotron{
+  padding: 48px;
+}
 
+.Jumbotron .container{
+    max-width: 700px;
+    margin: 0px auto;
+    padding: 1px;
+}
+
+.Jumbotron .row{
+  display: flex;
+  align-items: center;
+  padding:1px;
+}
+
+.Jumbotron .Header{
+  margin: 0px 50px;
+}
+
+.Jumbotron p{
+  display: inline-block;
+  max-width: 300px;
+  margin: 0px;
+  margin-left: 50px;
+}
+
+.Jumbotron .JumboButton{
+  border-width: 4px;
+  border-style: solid;
+  box-shadow: 0px 0px 8px 1px;
+  padding: 25px;
+  margin: 50px;
 }
