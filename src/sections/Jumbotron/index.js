@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
+
 import colors from 'colors.json'
 
 import Header from 'components/Header'

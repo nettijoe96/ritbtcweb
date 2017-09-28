@@ -1,8 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from 'components/App';
-import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import registerServiceWorker from 'registerServiceWorker';
+
+import TransitionGroup from 'react-transition-group/TransitionGroup';
+import AnimatedSwitch from 'components/AnimatedSwitch';
+
+import Home from 'pages/Home';
+
+import {
+	Router,
+	Route
+} from 'react-router-dom';
+
+import {
+	customHistory,
+} from 'api';
+
+ReactDOM.render(
+	<Router history={customHistory}>
+		<TransitionGroup>
+			<AnimatedSwitch>
+				<Route exact path="/" component={Home}/>
+			</AnimatedSwitch>
+		</TransitionGroup>
+	</Router>
+, document.getElementById('root'));
 registerServiceWorker();
