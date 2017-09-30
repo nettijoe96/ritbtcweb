@@ -1,2 +1,14 @@
+/* Make the NEXT element in the page give us space. */
+.Navbar + *{
+    margin-top: 50px;
+}
 .Navbar{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    height: 50px;
 }

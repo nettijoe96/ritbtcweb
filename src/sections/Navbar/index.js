@@ -10,7 +10,9 @@ class Navbar extends Component {
         const navItemsItems = navItems.items.map((x)=>{
             return(
                 <NavItem>
-                    {x.text}
+                    <a href={x.href}>
+                        <span>{x.text}</span>
+                    </a>
                 </NavItem>
             );
         });

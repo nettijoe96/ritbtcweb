@@ -1,2 +1,21 @@
 .NavItem{
+    height: 50px;
+    flex-grow: 1;
+}
+
+.NavItem a{
+    display: block;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color:white;
+}
+
+.NavItem a:hover{
+    color: #0FF;
+}
+
+.NavItem a span{
+    line-height: normal;
 }
