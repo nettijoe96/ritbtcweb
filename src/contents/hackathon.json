@@ -5,10 +5,15 @@
 	"buttons": [
 		{
 			"text": "Sign Up",
-			"link": "typeform link etc..."
+			"link": "typeform link etc...",
+			"className": "SpecialButton"
 		},
 		{
 			"text": "Learn More",
+			"link": "link to about hackathon page"
+		},
+		{
+			"text": "Volunteer",
 			"link": "link to about hackathon page"
 		}
 	]

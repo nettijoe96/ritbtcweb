@@ -10,8 +10,8 @@ export default class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <Navbar/>
-				<Jumbotron/>
+        {/*<Navbar/>
+				<Jumbotron/>*/}
 				<Hackathon />
       </div>
     );

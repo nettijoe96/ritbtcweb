@@ -9,21 +9,23 @@ export default class HackathonSignUp extends Component {
 
     return (
       <div className="HackathonSignUp">
-				<h1 >
+				<h1>
 					{title}
 				</h1>
 
-				<h2 >
+				<h2>
 					{date}
 				</h2>
 
-				<h3 >
+				<h3>
 					{subtitle}
 				</h3>
 
-				{buttons.map(({text, link}) => (
-					<Button link={link}>{text}</Button>
-				))}
+				<div className="ButtonContainer">
+					{buttons.map(({text, link, className}) => (
+						<Button key={text} link={link} className={className}>{text}</Button>
+					))}
+				</div>
       </div>
     );
   }
