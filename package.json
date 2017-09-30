@@ -4,8 +4,6 @@
   "private": true,
   "homepage": "https://navigatron.github.io/ritbtcweb/",
   "dependencies": {
-    "animated": "^0.2.0",
-    "history": "^4.7.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-dom-animated": "^1.0.3",
@@ -14,18 +12,14 @@
     "react-transition-group": "^2.2.0"
   },
   "scripts": {
-		"start": "npm run build-css && run-p -ncr watch-css start-js",
-		"start-js": "react-scripts start",
-
-		"build": "run-s -n build-css build-js",
-		"build-js": "react-scripts build",
-
-		"test": "run-s -n build-css test-js",
-		"test-js": "react-scripts test --env=jsdom",
-
-		"build-css": "node-less-chokidar src",
-		"watch-css": "node-less-chokidar src --watch",
-		
+    "start": "npm run build-css && run-p -ncr watch-css start-js",
+    "start-js": "react-scripts start",
+    "build": "run-s -n build-css build-js",
+    "build-js": "react-scripts build",
+    "test": "run-s -n build-css test-js",
+    "test-js": "react-scripts test --env=jsdom",
+    "build-css": "node-less-chokidar src",
+    "watch-css": "node-less-chokidar src --watch",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
     "publish": "npm run build; npm run deploy;",

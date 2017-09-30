@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch } from "react-router-dom";
-import * as Animated from "react-dom-animated";
+import Animated from "react-dom-animated";
 
 export default class AnimatedSwitch extends Switch {
 	constructor(props) {

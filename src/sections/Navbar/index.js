@@ -7,11 +7,11 @@ import NavItem from 'components/NavItem'
 
 class Navbar extends Component {
     render() {
-        const navItemsItems = navItems.items.map((x)=>{
+        const navItemsItems = navItems.items.map(({href, text})=>{
             return(
-                <NavItem>
-                    <a href={x.href}>
-                        <span>{x.text}</span>
+                <NavItem key={text}>
+                    <a href={href}>
+                        <span>{text}</span>
                     </a>
                 </NavItem>
             );

@@ -22,7 +22,7 @@
 
 @keyframes appear {
   0% {
-    top: -80px;
+    top: -60px;
   }
   100% {
     top: 0;
