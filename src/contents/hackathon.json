@@ -1,0 +1,15 @@
+{
+	"title": "BlockHack",
+	"date": "November 15-16, 2017",
+	"subtitle": "",
+	"buttons": [
+		{
+			"text": "Sign Up",
+			"link": "typeform link etc..."
+		},
+		{
+			"text": "Learn More",
+			"link": "link to about hackathon page"
+		}
+	]
+}

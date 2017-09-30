@@ -7,9 +7,9 @@ class Button extends Component {
     render() {
         return (
             <div className="Button" style={{
-            boxShadowColor: colors.dark.pure,
-            backgroundColor:colors.light.accent,
-            color:colors.dark.off
+	            boxShadowColor: colors.dark.pure,
+	            backgroundColor:colors.light.accent,
+	            color:colors.dark.off
             }}>
                 {this.props.children}
             </div>
