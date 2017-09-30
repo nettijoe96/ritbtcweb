@@ -1,2 +1,28 @@
-.Navbar{
+/* Make the NEXT element in the page give us space. */
+
+.Navbar {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: -100px;
+  border-bottom: 1px solid black;
+
+  display: flex;
+
+  height: 50px;
+
+  animation: appear 1s ease-in forwards;
+
+  position: fixed;
+
+  width: 100%;
+}
+
+@keyframes appear {
+  0% {
+    top: -80px;
+  }
+  100% {
+    top: 0;
+  }
 }

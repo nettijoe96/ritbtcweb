@@ -1,5 +1,12 @@
 .Jumbotron{
-  padding: 48px;
+
+	width: 100vw;
+	height: 80vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 
 .Jumbotron .container{

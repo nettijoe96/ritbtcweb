@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import './index.css';
-
+// Gimme Colors
 import colors from 'colors.json'
 
+// Gimme Pieces to Build with
 import Header from 'components/Header'
 import Button from 'components/Button'
 
+// Gimme Content to put in the Pieces.
+import JumbotronContent from 'contents/jumbotron.json'
+
 class Jumbotron extends Component {
     render() {
-        const content = this.props.content;
         return (
             <div className="Jumbotron" style={{
             backgroundColor:colors.dark.off
@@ -16,14 +19,14 @@ class Jumbotron extends Component {
                 <div className="container">
                     <div className="row">
                         <Header>
-                            {content.title}
+                            {JumbotronContent.title}
                         </Header>
                         <p style={{color:colors.light.pure}}>
-                            {content.paragraph}
+                            {JumbotronContent.paragraph}
                         </p>
                     </div>
                     <Button>
-                        {content.buttonText}
+                        {JumbotronContent.buttonText}
                     </Button>
                 </div>
             </div>
