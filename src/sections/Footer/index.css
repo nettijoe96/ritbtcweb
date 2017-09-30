@@ -1,0 +1,24 @@
+.Footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #201e1f;
+}
+.Footer p {
+  color: white;
+  font-size: 1em;
+}
+.Footer a {
+  color: dodgerblue;
+}
+.Footer .LicenseLogo {
+  display: inline-block;
+  border: none;
+  height: 1em;
+  opacity: 0.45;
+  transition: 0.36s;
+}
+.Footer .LicenseLogo:hover {
+  opacity: 1;
+}

@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
 import './index.css';
 
-import colors from 'colors.json'
-
 class Button extends Component {
     render() {
-				const {className, link, children} = this.props;
+				const {className, link, children, style} = this.props;
         return (
             <a className={className || "Button"}
-							 href={link}
-							 style={{
-	            // boxShadowColor: colors.dark.pure,
-	            // backgroundColor:colors.light.accent,
-	            // color:colors.dark.off
-            }}>
+								style={style}
+							 href={link}>
                 {children}
             </a>
         );

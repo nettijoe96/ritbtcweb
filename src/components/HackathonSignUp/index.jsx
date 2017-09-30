@@ -23,7 +23,8 @@ export default class HackathonSignUp extends Component {
 
 				<div className="ButtonContainer">
 					{buttons.map(({text, link, className}) => (
-						<Button key={text} link={link} className={className}>{text}</Button>
+						<Button key={text} link={link} className={className}
+							style={{marginRight: "25px"}}>{text}</Button>
 					))}
 				</div>
       </div>
