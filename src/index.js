@@ -10,7 +10,7 @@ import AnimatedSwitch from 'components/AnimatedSwitch';
 import Home from 'pages/Home';
 
 import {
-	Router,
+	BrowserRouter as Router,
 	Route
 } from 'react-router-dom';
 
