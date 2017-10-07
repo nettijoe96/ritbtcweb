@@ -1,0 +1,46 @@
+.Contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 90vh;
+  color: white;
+}
+.Contact .Header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+}
+.Contact .Header hr {
+  width: 45%;
+}
+.Contact .Header h1 {
+  font-size: 5em;
+  font-weight: bold;
+  margin-right: 2em;
+  margin-left: 2em;
+  text-align: center;
+  color: dodgerblue;
+  text-shadow: 0 5px 5px black;
+}
+.Contact .Header h2 {
+  font-size: 2em;
+}
+.Contact .Header h3 {
+  font-size: 1.5em;
+}
+@media screen and (max-width: 900px) {
+  .Contact .Header h1 {
+    font-size: 3em;
+  }
+  .Contact .Header h2 {
+    font-size: 1.35em;
+  }
+  .Contact .Header h3 {
+    font-size: 1.26em;
+  }
+}

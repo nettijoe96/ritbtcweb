@@ -1,36 +1,74 @@
-.Contact{
+.Contact
+{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
 
-		color: white;
+    color: white;
 
-		.Header {
-			height: 50vh;
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-			justify-content: center;
-			hr {
-				width: 45%;
-			}
-			h1
-			{
-				color: dodgerblue;
-				text-shadow: 0px 2px 2px #000;
-				font-size: 5em;
-				font-weight: bold;
-			}
-			h2 {
-				font-size: 2em;
-			}
-			h3 {
-				font-size: 1.5em;
-			}
-		}
+    .Header
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
 
+        width: 100vw;
+        height: 50vh;
+
+        hr
+        {
+            width: 45%;
+        }
+        h1
+        {
+            font-size: 5em;
+            font-weight: bold;
+
+						// font-variant: small-caps;
+
+            margin-right: 2em;
+            margin-left: 2em;
+
+            text-align: center;
+
+            color: dodgerblue;
+            text-shadow: 0 5px 5px black;
+        }
+
+        h2
+        {
+            font-size: 2em;
+        }
+        h3
+        {
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .Contact
+    {
+        .Header
+        {
+            h1
+            {
+                font-size: 3em;
+            }
+            h2
+            {
+                font-size: 1.35em;
+            }
+            h3
+            {
+                font-size: 1.26em;
+            }
+        }
+    }
 }
