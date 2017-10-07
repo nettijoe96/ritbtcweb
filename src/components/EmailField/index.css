@@ -37,48 +37,10 @@
   border-radius: 0 0 15px 15px;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
 }
-.EmailField .EmailSection.folded {
-  z-index: 1;
-  left: 50%;
-  width: 95%;
-  margin-top: 10px;
-  transform: translate(-50%, 0);
-}
-.EmailField .EmailSection.folded input {
-  background-color: #e9e2c0;
-}
-.EmailField .EmailSection.folded span {
-  background-color: #e9e2c0;
-}
-.EmailField .EmailSection.folded + .folded {
-  z-index: 0;
-  left: 50%;
-  width: 90%;
-  margin-top: 20px;
-  transform: translate(-50%, 0);
-}
-.EmailField .EmailSection.folded + .folded input {
-  background-color: #e1bcef;
-}
-.EmailField .EmailSection.folded + .folded span {
-  background-color: #e1bcef;
-}
-.EmailField .EmailSection.fold-up {
-  margin-top: -75px;
-}
 .EmailField .AnimatedButton {
   width: 20%;
+  min-width: 81px;
   background-color: #d4d4ff;
-  /*  .EmailIcon
-        {
-            font-weight: 100;
-
-            width: 100%;
-
-            color: rgb(153, 153, 248);
-            border: 0;
-            background: transparent;
-        }*/
 }
 .EmailField .AnimatedButton span {
   line-height: 75px;
@@ -90,14 +52,20 @@
   transition: all 0.2s ease-in;
   text-align: center;
 }
-.EmailField .AnimatedButton span i {
-  font-size: 25px;
-  color: #9999f8;
+.EmailField .AnimatedButton .Hide {
+  margin-top: -75px;
+}
+.EmailField .AnimatedButton .EmailIcon {
+  width: 2em;
+}
+.EmailField .AnimatedButton .SendIcon {
+  width: 2em;
 }
 .EmailField form {
   position: relative;
 }
 .EmailField form input {
+  font-size: 100%;
   width: 80%;
   margin: 0;
   padding: 20px 40px;

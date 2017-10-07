@@ -59,58 +59,13 @@
 
         border-radius: 0 0 15px 15px;
         box-shadow: 0 0 100px rgba(0,0,0,.2);
-
-        &.folded
-        {
-            z-index: 1;
-            left: 50%;
-
-            width: 95%;
-            margin-top: 10px;
-
-            transform: translate(-50%, 0);
-
-            input
-            {
-                background-color: rgb(233, 226, 192);
-            }
-
-            span
-            {
-                background-color: rgb(233, 226, 192);
-            }
-        }
-
-        &.folded + .folded
-        {
-            z-index: 0;
-            left: 50%;
-
-            width: 90%;
-            margin-top: 20px;
-
-            transform: translate(-50%, 0);
-
-            input
-            {
-                background-color: rgb(225, 188, 239);
-            }
-
-            span
-            {
-                background-color: rgb(225, 188, 239);
-            }
-        }
-
-        &.fold-up
-        {
-            margin-top: -@input-height;
-        }
     }
 
     .AnimatedButton
     {
         width: 20%;
+
+				min-width: 81px;
 
         background-color: rgb(212, 212, 255);
 
@@ -127,25 +82,23 @@
 
             transition: all .2s ease-in;
             text-align: center;
-
-            i
-            {
-                font-size: 25px;
-
-                color: rgb(153, 153, 248);
-            }
         }
 
-        /*  .EmailIcon
+        .Hide
         {
-            font-weight: 100;
+            margin-top: -@input-height;
+        }
 
-            width: 100%;
 
-            color: rgb(153, 153, 248);
-            border: 0;
-            background: transparent;
-        }*/
+        .EmailIcon
+        {
+            width: 2em;
+        }
+
+        .SendIcon
+        {
+            width: 2em;
+        }
     }
 
     form
@@ -153,6 +106,8 @@
         position: relative;
         input
         {
+            font-size: 100%;
+
             width: 80%;
             margin: 0;
             padding: 20px 40px;
