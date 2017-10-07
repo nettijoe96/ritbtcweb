@@ -10,7 +10,7 @@ import AnimatedSwitch from 'components/AnimatedSwitch';
 import Home from 'pages/Home';
 
 import {
-	BrowserRouter as Router,
+	Router,
 	Route
 } from 'react-router-dom';
 
@@ -19,7 +19,7 @@ import {
 } from 'api';
 
 ReactDOM.render(
-	<Router history={customHistory} basename="/ritbtcweb"> 
+	<Router history={customHistory} basename="/ritbtcweb">
 		<TransitionGroup>
 			<AnimatedSwitch>
 				<Route exact path="/" component={Home}/>
