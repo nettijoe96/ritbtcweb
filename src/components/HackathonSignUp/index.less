@@ -1,41 +1,64 @@
-.HackathonSignUp {
+.HackathonSignUp
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
 
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+    color: #fcfcfc;
 
-	flex-direction: column;
-	color: #fcfcfc;
+    h1
+    {
+        font-size: 5em;
+        font-weight: lighter;
 
-	h1 {
-    font-size: 5em;
-		font-weight: lighter;
-		padding-bottom: 30px;
-	}
+        padding-bottom: 30px;
+    }
 
-	h2	{
-		font-size: 1.5em;
-    text-transform: none;
-    font-weight: 300;
-		margin-left: 5px;
-	}
+    h2
+    {
+        font-size: 1.5em;
+        font-weight: 300;
 
-	.ButtonContainer {
-		margin-left: 5px;
-		display: flex;
-		align-items: center;
-		height: 150px;
-	}
+        margin-left: 5px;
 
-	.SpecialButton {
+        text-transform: none;
+    }
 
-	}
+    .ButtonContainer
+    {
+        display: flex;
+        align-items: center;
+
+        height: 150px;
+        margin-left: 5px;
+    }
 }
 
 @media screen and (max-width: 900px)
 {
     .HackathonSignUp
     {
-			align-items: center;
+        align-items: center;
+
+        width: 100vw;
+
+				h1 {
+					font-size: 4em;
+				}
+
+        .ButtonContainer
+        {
+            flex-direction: column;
+            justify-content: space-between;
+
+            width: 90vw;
+            height: 27vh;
+            margin-left: 25px;
+            padding-top: 1em;
+						a {
+							width: 60vw;
+						}
+        }
     }
 }
