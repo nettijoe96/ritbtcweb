@@ -29,7 +29,7 @@ class Jumbotron extends Component {
 						{JumbotronContent.subtitle}
 					</h3>
 				</div>
-					<hr/>
+			
 
 			</div>
 		);
