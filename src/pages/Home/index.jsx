@@ -5,6 +5,7 @@ import './index.css';
 import Jumbotron from 'sections/Jumbotron'
 import Navbar from 'sections/Navbar'
 import Hackathon from 'sections/Hackathon';
+import Contact from 'sections/Contact';
 import Footer from 'sections/Footer';
 
 export default class Home extends Component {
@@ -14,6 +15,7 @@ export default class Home extends Component {
         <Navbar/>
 				<Jumbotron/>
 				<Hackathon />
+        <Contact />
 				<Footer />
       </div>
     );

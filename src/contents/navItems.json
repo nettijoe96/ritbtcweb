@@ -1,15 +1,15 @@
 {
     "items":[
         {
-            "text":"Top",
+            "text":"Hackathon",
             "href":"#"
         },
         {
-            "text":"Anotha",
+            "text":"Resources",
             "href":"#"
         },
         {
-            "text":"One Two Three",
+            "text":"About",
             "href":"#"
         }
     ]
