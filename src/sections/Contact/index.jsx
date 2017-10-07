@@ -6,7 +6,6 @@ import './index.css';
 import colors from 'colors.json'
 
 // Gimme Pieces to Build with
-import Button from 'components/Button'
 import EmailField from 'components/EmailField'
 // Gimme Content to put in the Pieces.
 import ContactContent from 'contents/contact.json'
@@ -17,7 +16,7 @@ class Contact extends Component {
 					backgroundColor:colors.dark.off
 				}}>
 				<EmailField
-					fieldText={ContactContent.fieldText}/>
+					placeholder={ContactContent.placeholder}/>
 			</div>
 		);
 	}

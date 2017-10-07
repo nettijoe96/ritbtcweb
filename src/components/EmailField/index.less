@@ -1,3 +1,177 @@
-.EmailField {
-	
+
+@input-height: 75px;
+
+.EmailField
+{
+    width: 80vw;
+    max-width: 450px;
+
+    header
+    {
+        position: relative;
+        z-index: 4;
+
+        padding: 20px 40px;
+
+        border-radius: 15px 15px 0 0;
+        background: white;
+
+        h1
+        {
+            font-size: 2em;
+            font-weight: 900;
+
+            margin: 0;
+
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            color: #333;
+        }
+
+        p
+        {
+            font-size: 1em;
+
+            margin: 0;
+            margin-top: 5px;
+
+            word-spacing: 0;
+
+            color: rgb(159, 172, 182);
+        }
+    }
+
+    .EmailSection
+    {
+        position: relative;
+        z-index: 2;
+        left: 50%;
+
+        display: flex;
+        overflow: hidden;
+
+        width: 100%;
+        height: @input-height;
+
+        transition: all .2s ease-in;
+        transform: translate(-50%, 0);
+
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0 0 100px rgba(0,0,0,.2);
+
+        &.folded
+        {
+            z-index: 1;
+            left: 50%;
+
+            width: 95%;
+            margin-top: 10px;
+
+            transform: translate(-50%, 0);
+
+            input
+            {
+                background-color: rgb(233, 226, 192);
+            }
+
+            span
+            {
+                background-color: rgb(233, 226, 192);
+            }
+        }
+
+        &.folded + .folded
+        {
+            z-index: 0;
+            left: 50%;
+
+            width: 90%;
+            margin-top: 20px;
+
+            transform: translate(-50%, 0);
+
+            input
+            {
+                background-color: rgb(225, 188, 239);
+            }
+
+            span
+            {
+                background-color: rgb(225, 188, 239);
+            }
+        }
+
+        &.fold-up
+        {
+            margin-top: -@input-height;
+        }
+    }
+
+    .AnimatedButton
+    {
+        width: 20%;
+
+        background-color: rgb(212, 212, 255);
+
+        span
+        {
+            line-height: @input-height;
+
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
+
+            height: @input-height;
+
+            transition: all .2s ease-in;
+            text-align: center;
+
+            i
+            {
+                font-size: 25px;
+
+                color: rgb(153, 153, 248);
+            }
+        }
+
+        /*  .EmailIcon
+        {
+            font-weight: 100;
+
+            width: 100%;
+
+            color: rgb(153, 153, 248);
+            border: 0;
+            background: transparent;
+        }*/
+    }
+
+    form
+    {
+        position: relative;
+        input
+        {
+            width: 80%;
+            margin: 0;
+            padding: 20px 40px;
+
+            color: rgb(143, 143, 214);
+            border: 0;
+            background: lighten(rgb(243, 243, 251), 5%);
+
+            &:focus
+            {
+                outline: none;
+            }
+
+            &::placeholder
+            {
+                font-weight: 100;
+
+                color: rgb(143, 143, 214);
+            }
+        }
+    }
 }
