@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
+import React, {
+	Component
+} from 'react';
 import './index.css';
 
-import envelopeIcon from './envelope.svg';
+import emailIcon from './email.svg';
+import sendIcon from './send.svg';
 
 export default class EmailField extends Component {
-    render() {
-				const {fieldText} = this.props;
-        return (
-            <div className="EmailField">
+	render() {
+		const {
+			placeholder
+		} = this.props;
+		return(
+			<div className="EmailField">
 							<header>
 								<h1>Sign Up</h1>
 								<p>Fill in all informations</p>
@@ -15,24 +20,22 @@ export default class EmailField extends Component {
 
 							<form>
 
-								<div className="input-section email-section">
-									<input className="email" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off"/>
-									<div className="animated-button">
+								<div className="EmailSection">
+									<input className="EmailInput" type="email" placeholder={placeholder}/>
 
-									<span className="icon-paper-plane">
-
+									<div className="AnimatedButton">
+									<span className="EmailIcon">
+										<img src={emailIcon} alt="Email icon"/>
 									</span>
 
-									<span className="next-button email">
-										<img src={envelopeIcon}/>
+									<span className="SendButton">
+										<img src={sendIcon} alt="Send icon"/>
 									</span>
-
 									</div>
 								</div>
 
 							</form>
-{/*            <input type="text" name="Email" placeholder={fieldText}/>*/}
             </div>
-        );
-    }
+		);
+	}
 }
