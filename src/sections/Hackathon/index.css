@@ -3,8 +3,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 45vh;
 }
 .Hackathon .HackathonBanner {
   width: 450px;
   padding-right: 10%;
+}
+@media screen and (max-width: 900px) {
+  .Hackathon {
+    flex-direction: column;
+    height: 90vh;
+  }
 }
