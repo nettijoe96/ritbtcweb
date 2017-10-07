@@ -1,10 +1,10 @@
 .Hackathon {
-  background: red;
+  background: #33ccff;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 45vh;
+  height: 100vh;
 }
 .Hackathon .HackathonBanner {
   width: 450px;
@@ -13,7 +13,7 @@
 @media screen and (max-width: 900px) {
   .Hackathon {
     flex-direction: column;
-    height: 90vh;
+    height: 130vh;
   }
   .Hackathon .HackathonBanner {
     width: 90vw;
