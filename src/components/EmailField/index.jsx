@@ -25,6 +25,7 @@ export default class EmailField extends Component {
 
 	render() {
 		const {
+			title, subtitle,
 			placeholder
 		} = this.props;
 
@@ -35,8 +36,8 @@ export default class EmailField extends Component {
 		return(
 			<div className="EmailField">
 				<header>
-					<h1>Sign Up</h1>
-					<p>Fill in all informations</p>
+					<h1>{title}</h1>
+					<p>{subtitle}</p>
 				</header>
 
 				<form>

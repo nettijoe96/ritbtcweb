@@ -5,9 +5,6 @@ import './index.css';
 // Gimme Colors
 import colors from 'colors.json'
 
-// Gimme Pieces to Build with
-import Button from 'components/Button'
-
 // Gimme Content to put in the Pieces.
 import JumbotronContent from 'contents/jumbotron.json'
 
@@ -29,9 +26,7 @@ class Jumbotron extends Component {
 						{JumbotronContent.subtitle}
 					</h3>
 				</div>
-				<Button>
-					{JumbotronContent.buttonText}
-				</Button>
+					<hr/>
 
 			</div>
 		);

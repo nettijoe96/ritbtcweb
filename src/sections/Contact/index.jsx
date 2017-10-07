@@ -16,6 +16,8 @@ class Contact extends Component {
 					backgroundColor:colors.dark.off
 				}}>
 				<EmailField
+					title={ContactContent.title}
+					subtitle={ContactContent.subtitle}
 					placeholder={ContactContent.placeholder}/>
 			</div>
 		);
