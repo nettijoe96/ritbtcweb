@@ -29,6 +29,7 @@
 }
 .Jumbotron .Header h2 {
   font-size: 2em;
+  text-transform: uppercase;
 }
 .Jumbotron .Header h3 {
   font-size: 1.5em;

@@ -3,16 +3,22 @@ import React, {
 } from 'react';
 import './index.css';
 
+import {DAYS} from 'api';
+
 import Button from 'components/Button';
 
 // Gimme Colors
 import colors from 'colors.json'
 
 // Gimme Content to put in the Pieces.
-import {title, paragraph, subtitle, signinUrl} from 'contents/jumbotron.json'
+import {title, date, time, subtitle, buttonText, buttonHref} from 'contents/jumbotron.json'
 
 class Jumbotron extends Component {
 	render() {
+		const today = new Date();
+
+		const showSignin = DAYS[today.getDay()] === date;
+
 		return(
 			<div className="Jumbotron" style={{
 					backgroundColor:colors.dark.off
@@ -23,17 +29,18 @@ class Jumbotron extends Component {
 					</h1>
 					<hr/>
 					<h2>
-						{paragraph}
+						{date} {time}
 					</h2>
 					<h3>
 						{subtitle}
 					</h3>
 				</div>
 
-				<Button link={signinUrl}>
-					- sign in -
-				</Button>
-
+				{showSignin &&
+					<Button link={buttonHref} style={{width: "360px"}}>
+						{buttonText}
+					</Button>
+				}
 
 			</div>
 		);

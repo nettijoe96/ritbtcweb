@@ -1,7 +1,8 @@
 {
   "title":"blockchain technology club",
-  "paragraph":"TUESDAY 7:00-9:00PM",
+	"date": "Tuesday",
+  "time":"7:00-9:00PM",
 	"subtitle": "GOLISANO 2690",
-  "buttonText":"Whitepaper",
-  "buttonHref":""
+  "buttonText":"Please Sign-in!",
+  "buttonHref":"https://nettijoe96.typeform.com/to/AgoZBH"
 }
