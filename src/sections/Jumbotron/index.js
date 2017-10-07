@@ -2,11 +2,14 @@ import React, {
 	Component
 } from 'react';
 import './index.css';
+
+import Button from 'components/Button';
+
 // Gimme Colors
 import colors from 'colors.json'
 
 // Gimme Content to put in the Pieces.
-import JumbotronContent from 'contents/jumbotron.json'
+import {title, paragraph, subtitle, signinUrl} from 'contents/jumbotron.json'
 
 class Jumbotron extends Component {
 	render() {
@@ -16,17 +19,21 @@ class Jumbotron extends Component {
 				}}>
 				<div className="Header">
 					<h1>
-						{JumbotronContent.title}
+						{title}
 					</h1>
 					<hr/>
 					<h2>
-						{JumbotronContent.paragraph}
+						{paragraph}
 					</h2>
 					<h3>
-						{JumbotronContent.subtitle}
+						{subtitle}
 					</h3>
 				</div>
-					<hr/>
+
+				<Button link={signinUrl}>
+					- sign in -
+				</Button>
+
 
 			</div>
 		);
