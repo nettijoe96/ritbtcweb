@@ -1,8 +1,8 @@
 .HackathonSignUp {
   display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  justify-content: flex-start;
   color: #fcfcfc;
 }
 .HackathonSignUp h1 {
@@ -12,18 +12,33 @@
 }
 .HackathonSignUp h2 {
   font-size: 1.5em;
-  text-transform: none;
   font-weight: 300;
   margin-left: 5px;
+  text-transform: none;
 }
 .HackathonSignUp .ButtonContainer {
-  margin-left: 5px;
   display: flex;
   align-items: center;
   height: 150px;
+  margin-left: 5px;
 }
 @media screen and (max-width: 900px) {
   .HackathonSignUp {
     align-items: center;
+    width: 100vw;
+  }
+  .HackathonSignUp h1 {
+    font-size: 4em;
+  }
+  .HackathonSignUp .ButtonContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    height: 27vh;
+    margin-left: 25px;
+    padding-top: 1em;
+  }
+  .HackathonSignUp .ButtonContainer a {
+    width: 60vw;
   }
 }

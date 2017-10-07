@@ -15,4 +15,8 @@
     flex-direction: column;
     height: 90vh;
   }
+  .Hackathon .HackathonBanner {
+    width: 90vw;
+    padding: 0;
+  }
 }
