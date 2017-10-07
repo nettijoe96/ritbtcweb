@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
 import './index.css';
 
-class EmailField extends Component {
+export default class EmailField extends Component {
     render() {
-				const {className, link, children, style} = this.props;
+				const {className, link, children, fieldText} = this.props;
         return (
-            <a className={className || "EmailField"}
-								style={style}
-							 href={link}>
-                {children}
-            </a>
-            <input type="text", name="Email">
-
+            <div>
+            <input type="text" name="Email" placeholder={fieldText}/>
+            </div>
         );
     }
 }
-export default EmailField;

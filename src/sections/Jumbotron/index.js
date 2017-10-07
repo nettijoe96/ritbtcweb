@@ -29,7 +29,6 @@ class Jumbotron extends Component {
 						{JumbotronContent.subtitle}
 					</h3>
 				</div>
-
 				<Button>
 					{JumbotronContent.buttonText}
 				</Button>
