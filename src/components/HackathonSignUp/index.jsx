@@ -10,7 +10,7 @@ export default class HackathonSignUp extends Component {
     return (
       <div className="HackathonSignUp">
 				<h1>
-					{title}
+					{title} 
 				</h1>
 
 				<h2>

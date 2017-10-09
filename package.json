@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://nettijoe96.github.io/ritbtcweb/",
   "dependencies": {
+    "8": "0.0.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-dom-animated": "^1.0.3",
