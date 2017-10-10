@@ -5,16 +5,16 @@
 	"buttons": [
 		{
 			"text": "Sign Up",
-			"link": "typeform link etc...",
+			"link": "https://coinhack.typeform.com/to/dYKt36",
 			"className": "SpecialButton"
 		},
 		{
 			"text": "Learn More",
-			"link": "link to about hackathon page"
+			"link": "https://medium.com/@ritblockchainclub/rit-blockchain-hackathon-nov-17-5d60ddc71836"
 		},
 		{
 			"text": "Volunteer",
-			"link": "link to about hackathon page"
+			"link": "https://coinhack.typeform.com/to/fMevMc"
 		}
 	]
 }
